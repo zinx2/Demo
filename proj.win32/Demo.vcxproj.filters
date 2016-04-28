@@ -27,6 +27,15 @@
     <ClCompile Include="..\Classes\Navigation\MainView.cpp">
       <Filter>src\Navigation</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Navigation\Layout1.cpp">
+      <Filter>src\Navigation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Navigation\Layout2.cpp">
+      <Filter>src\Navigation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Navigation\LayoutBase.cpp">
+      <Filter>src\Navigation</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -39,6 +48,18 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Navigation\MainView.h">
+      <Filter>src\Navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Navigation\Layout1.h">
+      <Filter>src\Navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Navigation\Layout2.h">
+      <Filter>src\Navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Navigation\LayoutBase.h">
+      <Filter>src\Navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Navigation\ViewBase.h">
       <Filter>src\Navigation</Filter>
     </ClInclude>
   </ItemGroup>

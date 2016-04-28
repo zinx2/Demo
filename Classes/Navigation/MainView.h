@@ -1,20 +1,23 @@
 #pragma once
-#include "cocos2d.h"
-#include "cocostudio/CocoStudio.h"
-#include "ui/CocosGUI.h"
+#include "ViewBase.h"
+#include "LayoutBase.h"
 
-USING_NS_CC;
-using namespace cocos2d::ui;
-
-class MainView : public cocos2d::Layer
+class MainView : public ViewBase
 {
+private:
+	LayoutBase* _layout1;
+	LayoutBase* _layout2;
+
+	void injectRef();
+
 public:
-	// there's no 'id' in cpp, so we recommend returning the class instance pointer
+	//MainView();
+	//virtual ~MainView();
+	LayoutBase* getLayout1();
+
+	void initializeView();
 	static cocos2d::Scene* createScene();
-
-	// Here's a difference. Method 'init' in cocos2d-x returns bool, instead of returning 'id' in cocos2d-iphone
 	virtual bool init();
-
-	// implement the "static create()" method manually
+	virtual void chaneColorLayout1();
 	CREATE_FUNC(MainView);
 };
