@@ -4,13 +4,13 @@ c:\cocos2d-x-3.10\cocos\physics\ccphysicsbody.h : warning C4819: 현재 코드 �
 c:\cocos2d-x-3.10\cocos\physics\ccphysicsshape.h : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
 c:\cocos2d-x-3.10\cocos\platform\ccsaxparser.h : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
 c:\cocos2d-x-3.10\cocos\ui\uihelper.h : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-c:\users\jhwan\documents\github\demo\classes\navigation\mainview.cpp(69): warning C4996: 'cocos2d::Node::setZOrder': deprecated로 선언되었습니다.
+c:\users\jhwan\documents\github\demo\classes\navigation\mainview.cpp(83): warning C4996: 'cocos2d::Node::setZOrder': deprecated로 선언되었습니다.
   c:\cocos2d-x-3.10\cocos\2d\ccnode.h(159): note: 'cocos2d::Node::setZOrder' 선언을 참조하십시오.
-c:\users\jhwan\documents\github\demo\classes\navigation\mainview.cpp(42): warning C4996: 'cocos2d::ui::Widget::setSize': deprecated로 선언되었습니다.
+c:\users\jhwan\documents\github\demo\classes\navigation\mainview.cpp(56): warning C4996: 'cocos2d::ui::Widget::setSize': deprecated로 선언되었습니다.
   c:\cocos2d-x-3.10\cocos\ui\uiwidget.h(485): note: 'cocos2d::ui::Widget::setSize' 선언을 참조하십시오.
-c:\users\jhwan\documents\github\demo\classes\navigation\mainview.cpp(53): warning C4996: 'cocos2d::Node::setZOrder': deprecated로 선언되었습니다.
+c:\users\jhwan\documents\github\demo\classes\navigation\mainview.cpp(67): warning C4996: 'cocos2d::Node::setZOrder': deprecated로 선언되었습니다.
   c:\cocos2d-x-3.10\cocos\2d\ccnode.h(159): note: 'cocos2d::Node::setZOrder' 선언을 참조하십시오.
-c:\users\jhwan\documents\github\demo\classes\navigation\mainview.cpp(61): warning C4996: 'cocos2d::Node::setZOrder': deprecated로 선언되었습니다.
+c:\users\jhwan\documents\github\demo\classes\navigation\mainview.cpp(75): warning C4996: 'cocos2d::Node::setZOrder': deprecated로 선언되었습니다.
   c:\cocos2d-x-3.10\cocos\2d\ccnode.h(159): note: 'cocos2d::Node::setZOrder' 선언을 참조하십시오.
   60 File(s) copied
   Demo.vcxproj -> C:\Users\JHwan\Documents\GitHub\Demo\proj.win32\Debug.win32\Demo.exe

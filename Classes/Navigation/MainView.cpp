@@ -2,6 +2,17 @@
 #include "Layout1.h"
 #include "Layout2.h"
 
+#define CREATE_WIDGET(TYPE, CHILD) TYPE* CHILD = TYPE::create();
+
+#define TO(PARENT) PARENT->
+#define OF(WIDGET) WIDGET->
+#define SET 
+#define SIZE(x, y) setSize(Size(x, y));
+#define ANCHOR(anchor) AnchorPoint(Point::anchor);
+#define POSITION(x, y) Position(Vec2(x, y));
+
+
+#define ADD(CHILD) addChild(CHILD);
 //MainView::MainView()
 //{
 //
@@ -37,14 +48,17 @@ bool MainView::init()
 void MainView::initializeView()
 {
 
+	CREATE_WIDGET(Layout, mainLayout)
+	TO(this) ADD(mainLayout)
+	TO(mainLayout) ADD(_layout1)
+		//TO(mainLayout)
 
-	Layout* mainLayout = Layout::create();
-	mainLayout->setSize(Size(960, 640));
-	mainLayout->setAnchorPoint(Point::ANCHOR_BOTTOM_LEFT);
-	mainLayout->setPosition(Vec2(0, 0));
+	OF(mainLayout) SET SIZE(960, 640)
+	//OF(mainLayout) SET ANCHOR(ANCHOR_BOTTOM_LEFT)
+	//OF(mainLayout) SET POSITION(0, 0)
 
 	
-	mainLayout->addChild(_layout1);
+	//mainLayout->addChild(_layout1);
 
 	
 	_layout2->initializeView();
@@ -71,8 +85,9 @@ void MainView::initializeView()
 
 	});
 
-	mainLayout->addChild(button1);
-	this->addChild(mainLayout);
+	//mainLayout->addChild(button1);
+	//addWidget(mainLayout)
+	//this->addChild(mainLayout);
 }
 //
 void MainView::chaneColorLayout1()
@@ -87,4 +102,13 @@ void MainView::chaneColorLayout1()
 LayoutBase* MainView::getLayout1()
 {
 	return _layout1;
+}
+
+void MainView::addWidget(Widget* parent, queue<Widget*> widgets)
+{
+	while (widgets.size() != 0)
+	{
+		parent->addChild(widgets.front());
+		widgets.pop();
+	}
 }

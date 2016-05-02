@@ -1,6 +1,7 @@
 #pragma once
 #include "ViewBase.h"
 #include "LayoutBase.h"
+#include <queue>
 
 class MainView : public ViewBase
 {
@@ -9,7 +10,7 @@ private:
 	LayoutBase* _layout2;
 
 	void injectRef();
-
+	void addWidget(Widget* parent, queue<Widget*> widgets);
 public:
 	//MainView();
 	//virtual ~MainView();
